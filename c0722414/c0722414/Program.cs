@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace c0722414
@@ -10,6 +11,15 @@ namespace c0722414
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("hello");
+            Download();
+            Console.ReadLine();
+
+        }
+        static void Download()
+        {
+            Thread.Sleep(3000);
+            Console.WriteLine("Download complete");
         }
     }
 }
